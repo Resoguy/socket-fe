@@ -10,30 +10,30 @@ class Home extends React.Component {
     }
 
 
-    componentDidMount() {
-        document.addEventListener('mousemove', this.handleMousemove)
-    }
+    // componentDidMount() {
+    //     document.addEventListener('mousemove', this.handleMousemove)
+    // }
 
-    componentWillUnmount() {
-        document.removeEventListener('mousemove', this.handleMousemove);
-    }
+    // componentWillUnmount() {
+    //     document.removeEventListener('mousemove', this.handleMousemove);
+    // }
 
-    handleMousemove = event => {
-        const {clientX, clientY} = event;
+    // handleMousemove = event => {
+    //     const {clientX, clientY} = event;
 
-        console.log({x: clientX, y: clientY});
+    //     console.log({x: clientX, y: clientY});
 
-        this.setState({client: {x: clientX, y: clientY}});
+    //     this.setState({client: {x: clientX, y: clientY}});
 
-    }
+    // }
 
     render() {
         return (
             <div>
                 <h1>HomePage!</h1>
-                <div style={{top: this.state.client.y, left: this.state.client.x}} className={s.box}>
+                {/* <div style={{top: this.state.client.y, left: this.state.client.x}} className={s.box}>
                     <img src={`https://unsplash.it/${this.state.client.x}/${this.state.client.y}`} />
-                </div>
+                </div> */}
             </div>
         )
     }

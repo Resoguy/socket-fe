@@ -1,0 +1,23 @@
+.tabs {
+    display: flex;
+}
+
+.tabItem {
+    display: flex;
+    margin: 8px;
+}
+
+.tabItem input {
+    display: none;
+}
+
+.tabItem label {
+    border-radius: 4px;
+    padding: 10px 20px;
+    border: 1px solid slategray;
+}
+
+.tabItem.active label {
+    background-color: slateblue;
+    color: snow;
+}
